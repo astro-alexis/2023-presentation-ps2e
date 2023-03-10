@@ -1,0 +1,6 @@
+CRIRE.2021-10-27T11:08:20.728.fits	FLAT     	
+CRIRE.2021-10-27T11:08:35.134.fits	FLAT     	
+CRIRE.2021-10-27T11:08:49.535.fits	FLAT     	
+01_darks/cr2res_cal_dark_Y1029_3x3_bpm.fits CAL_DARK_BPM
+01_darks/cr2res_cal_dark_Y1029_3x3_master.fits CAL_DARK_BPM
+static/Y1029_tw.fits

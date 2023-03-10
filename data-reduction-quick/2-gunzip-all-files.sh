@@ -1,0 +1,1 @@
+gunzip *Z -v
