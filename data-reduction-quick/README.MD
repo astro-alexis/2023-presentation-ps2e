@@ -19,9 +19,17 @@ There are two main ways to download data from the ESO archive:
 - using the astroquery.eso python package, see https://astroquery.readthedocs.io/en/latest/eso/eso.html
 
 For this experiment, I have already copied a bash script that downloads the raw science data from the ESO archive as well as all corresponding raw calibrations. The script is `1-download-raw-data.sh`. You need to edit the file and replace "username=alavail" with your own ESO username
-Download the data by running `bash 1-download-raw-data.sh`. Then, unzip the files by running `2-gunzip-all-files.sh`.
+Download the data by running `bash 1-download-raw-data.sh`. 
 
-You can see which raw files are what by running the dfits and fitsort commands e.g `dfits CR*fits | fitsort OBJECT INS.WLEN.ID DET.NDIT DET.SEQ1.DIT AOS.RTC.LOOP.STATE` which should return
+Then unzip all files running:
+
+`gunzip *Z -v`
+
+You can see which raw files are what by running the dfits and fitsort commands e.g 
+
+`dfits CR*fits | fitsort OBJECT INS.WLEN.ID DET.NDIT DET.SEQ1.DIT AOS.RTC.LOOP.STATE` 
+
+which should return
 
 FILE                                    OBJECT          INS.WLEN.ID     DET.NDIT        DET.SEQ1.DIT    AOS.RTC.LOOP.STATE
 CRIRE.2021-10-26T23:42:44.753.fits      AU Mic          Y1029           3               20.000000       CLOSED            
